@@ -34,7 +34,7 @@ function PhotoGrid() {
             <div className="photo-grid">
                 {images.map((image, index) => (
                     <span key={`image_${index}`} onClick={() => openLightbox(image)}>
-                        <img src={image.image} alt={image.alt} id={`image_${index}`} />
+                        <img src={image.image} alt={image.alt} id={`image_${index}`} className='hamburger' />
                     </span>
                 ))}
             </div>
