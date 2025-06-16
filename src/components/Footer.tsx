@@ -2,7 +2,7 @@ import '../styles/main.css';
 
 function Footer() {
   return (
-    <footer>
+    <footer id='footer'>
         <p id="copyright">&copy; 2025 Alexander Domina MET CS601</p>
     </footer>
   );

@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PhotoGrid from '../components/PhotoGrid';
 
+//React component for the photos page
 function Photos() {
   return (
     <div>

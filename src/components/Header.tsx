@@ -3,9 +3,9 @@ import '../styles/main.css';
 
 function Header() {
   return (
-    <header>
+    <header id='header'>
         <HamburgerNav/>
-        <h1>Alexander Domina Portfolio</h1>
+        <h1 id='header-text'>Alexander Domina Portfolio</h1>
     </header>
   );
 }
