@@ -49,7 +49,7 @@ function ContactForm () {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='form'>
                 {(validResponse ? 
                 <h3 style={{ textAlign: "center" }}>Email sent successfully</h3> : 
                 ((otherError || validResponse === false) && <h3 style={{ textAlign: "center", color: "red" }}>{otherError ? otherError : 'Email failed to send'}</h3>))}
@@ -83,7 +83,7 @@ function ContactForm () {
                 <div>
                     <label><b>Message:</b> </label>
                     <div>
-                        <textarea rows={30} value={message} onChange={({ currentTarget: { value } }) => setMessage(value)} required/>
+                        <textarea rows={15} value={message} onChange={({ currentTarget: { value } }) => setMessage(value)} required/>
                     </div>
                 </div>
                 <span className="button">
