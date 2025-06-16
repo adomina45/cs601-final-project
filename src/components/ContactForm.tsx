@@ -87,7 +87,7 @@ function ContactForm () {
                     </div>
                 </div>
                 <span className="button">
-                    <button type="submit">
+                    <button type="submit" aria-label="Send Email Button">
                         Send Email
                     </button>
                 </span>

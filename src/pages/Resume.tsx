@@ -67,7 +67,7 @@ function Resume() {
                     <p>Bachelor of Arts, Computer Science, Minor, Physics</p>
                 </div>
                 <div className='button'>
-                    <button onClick={download}>Download Resume</button>
+                    <button onClick={download} aria-label="Download Resume Button">Download Resume</button>
                 </div>
             </div>
         </div>

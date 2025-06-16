@@ -28,7 +28,7 @@ function HamburgerNav() {
         <div className="hamburger-nav">
             <div className="hamburger-container">
                 <div onClick={() => setClicked(!clicked)} className="hamburger">
-                    <HamburgerIcon />
+                    <HamburgerIcon aria-label="Website Navigation Button" />
                 </div>
             </div>
             {clicked && (
