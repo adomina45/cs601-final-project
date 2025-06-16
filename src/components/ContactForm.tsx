@@ -50,7 +50,7 @@ function ContactForm () {
             <form onSubmit={handleSubmit}>
                 {(validResponse ? 
                 <h3 style={{ textAlign: "center" }}>Email sent successfully</h3> : 
-                <h3 style={{ textAlign: "center", backgroundColor: "red" }}>{otherError ? otherError : 'Email failed to send'}</h3>)}
+                ((otherError || validResponse === false) && <h3 style={{ textAlign: "center", color: "red" }}>{otherError ? otherError : 'Email failed to send'}</h3>))}
                 <div>
                     <label><b>Name:</b> </label>
                     <input
