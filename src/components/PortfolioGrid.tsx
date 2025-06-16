@@ -1,4 +1,3 @@
-import React from 'react';
 import type { RepoData } from '../types/types';
 
 function PortfolioGrid({ data }: {data: RepoData[]}) {
