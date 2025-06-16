@@ -64,6 +64,11 @@ body {
   border-radius: 50%;
 }
 
+.space-header-footer {
+  flex: 1;
+  max-width: fit-content;
+}
+
 .grid {
   width: 100%;
   display: grid;

@@ -47,50 +47,49 @@ function ContactForm () {
 
     return (
         <div>
-            {(validResponse === undefined && !otherError) ?
-                <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
+                {(validResponse ? 
+                <h3 style={{ textAlign: "center" }}>Email sent successfully</h3> : 
+                <h3 style={{ textAlign: "center", backgroundColor: "red" }}>{otherError ? otherError : 'Email failed to send'}</h3>)}
+                <div>
+                    <label><b>Name:</b> </label>
+                    <input
+                        type="text"
+                        value={name}
+                        onChange={({ currentTarget: { value } }) => setName(value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label><b>Email:</b> </label>
+                    <input
+                        type="email"
+                        value={returnEmail}
+                        onChange={({ currentTarget: { value } }) => setReturnEmail(value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label><b>Subject:</b> </label>
+                    <input
+                        type="text"
+                        value={subject}
+                        onChange={({ currentTarget: { value } }) => setSubject(value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label><b>Message:</b> </label>
                     <div>
-                        <label><b>Name:</b> </label>
-                        <input
-                            type="text"
-                            value={name}
-                            onChange={({ currentTarget: { value } }) => setName(value)}
-                            required
-                        />
+                        <textarea rows={30} value={message} onChange={({ currentTarget: { value } }) => setMessage(value)} required/>
                     </div>
-                    <div>
-                        <label><b>Email:</b> </label>
-                        <input
-                            type="email"
-                            value={returnEmail}
-                            onChange={({ currentTarget: { value } }) => setReturnEmail(value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label><b>Subject:</b> </label>
-                        <input
-                            type="text"
-                            value={subject}
-                            onChange={({ currentTarget: { value } }) => setSubject(value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label><b>Message:</b> </label>
-                        <div>
-                            <textarea rows={30} value={message} onChange={({ currentTarget: { value } }) => setMessage(value)} required/>
-                        </div>
-                    </div>
-                    <span className="button">
-                        <button type="submit">
-                            Send Email
-                        </button>
-                    </span>
-                </form>
-            : (validResponse ? 
-                <h3>Email sent successfully</h3> : 
-                <h3>{otherError ? otherError : 'Email failed to send'}</h3>)}
+                </div>
+                <span className="button">
+                    <button type="submit">
+                        Send Email
+                    </button>
+                </span>
+            </form>
         </div>
     );
     

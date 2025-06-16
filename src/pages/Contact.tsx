@@ -7,8 +7,10 @@ function Contact() {
   return (
     <div>
         <Header />
-        <h1 className='center-heading'>Contact Me</h1>
-        <ContactForm />
+        <div>
+            <h1 className='center-heading'>Contact Me</h1>
+            <ContactForm />
+        </div>
         <Footer />
     </div>
   );

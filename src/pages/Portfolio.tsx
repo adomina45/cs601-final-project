@@ -36,7 +36,9 @@ function Portfolio() {
     return (
         <div>
             <Header />
-            {error ? <h3>{error}</h3> :<PortfolioGrid data={repoData} /> }
+            <div className="space-header-footer">
+                {error ? <h3 style={{ textAlign: "center", backgroundColor: "red" }}>{error}</h3> :<PortfolioGrid data={repoData} /> }
+            </div>
             <Footer />
         </div>
     );

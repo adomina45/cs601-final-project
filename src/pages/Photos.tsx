@@ -7,8 +7,10 @@ function Photos() {
   return (
     <div>
         <Header />
-        <h1 className='center-heading'>Photos Gallery</h1>
-        <PhotoGrid />
+        <div className="space-header-footer">
+            <h1 className='center-heading'>Photos Gallery</h1>
+            <PhotoGrid />
+        </div>
         <Footer />
     </div>
   );
