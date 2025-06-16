@@ -53,7 +53,7 @@ body {
   transition: background-color 0.2s;
 }
 
-.ma nav a:hover {
+.nav nav a:hover {
   background-color: #444;
 }
 
@@ -268,6 +268,19 @@ section > a {
 
   .grid, .photo-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .nav {
+    left: 0;
+    top: 2em;
+    width: 100%;
+    padding: 1rem 0;
+    justify-content: center;
+  }
+
+  .nav nav a {
+    padding: 5px 10px;
+    text-align: center;
   }
 
   input[type="text"],
