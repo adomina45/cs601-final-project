@@ -1,0 +1,11 @@
+import '../styles/main.css';
+
+function Footer() {
+  return (
+    <footer>
+        <p id="copyright">&copy; 2025 Alexander Domina MET CS601</p>
+    </footer>
+  );
+}
+
+export default Footer;
