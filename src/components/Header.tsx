@@ -1,4 +1,3 @@
-import React from 'react';
 import HamburgerNav from './HamburgerNav';
 import '../styles/main.css';
 

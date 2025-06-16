@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Image } from '../types/types';
 import '../styles/main.css';
 
