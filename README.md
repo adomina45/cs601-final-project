@@ -66,6 +66,9 @@ Link: https://cs601-final.netlify.app/
   # Start local development server
   npm run dev
 
+  #Globally install ntl for deploys
+  npm install -g ntl
+
   # Start test production deploy
   ntl deploy
 
