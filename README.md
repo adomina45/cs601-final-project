@@ -2,6 +2,8 @@
 
 This is the final project submission for CS601. It is a personal portfolio website built using React with TypeScript, leveraging deployed via Netlify.
 
+Link: https://cs601-final.netlify.app/
+
 ## Features
 
 * Component-based design using React

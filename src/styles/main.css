@@ -92,6 +92,7 @@ body {
   border: solid 1px #000;
   align-content: center;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .card h3, .card p {
