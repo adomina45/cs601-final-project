@@ -34,10 +34,10 @@ function Portfolio() {
         getRepoData();
     }, []);
     return (
-        <div>
+        <div className='page-container'>
             <Header />
-            <div className="space-header-footer">
-                {error ? <h3 style={{ textAlign: "center", backgroundColor: "red" }}>{error}</h3> :<PortfolioGrid data={repoData} /> }
+            <div className="content">
+                {error ? <h3 style={{ textAlign: "center", color: "red" }}>{error}</h3> :<PortfolioGrid data={repoData} /> }
             </div>
             <Footer />
         </div>

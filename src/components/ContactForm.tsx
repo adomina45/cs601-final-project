@@ -29,6 +29,8 @@ function ContactForm () {
         if (!message) return;
         if (!subject) return;
         if (!returnEmail) return;
+        setValidResponse(undefined);
+        setOtherError('');
         try {
             const resp = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
                 method: "POST",
