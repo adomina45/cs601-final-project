@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function download() {
-    const fileLoc = '/public/download/Alexander_Domina_Resume.pdf';
+    const fileLoc = '/download/Alexander_Domina_Resume.pdf';
     const link = document.createElement("a");
     link.href = fileLoc;
     link.download = "Alexander_Domina_Resume.pdf";
