@@ -128,6 +128,8 @@ section > a {
 
 .resume {
   padding: 2rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .resume  h1, .resume h2, .resume h3{
